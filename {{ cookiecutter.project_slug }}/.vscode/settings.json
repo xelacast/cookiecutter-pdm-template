@@ -1,0 +1,10 @@
+{
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.extraPaths": [
+    ".venv/lib/python3.11/site-packages"
+  ],
+  "python.analysis.fixAll": [
+    "source.unusedImports"
+  ],
+  "python.languageServer": "Pylance",
+}

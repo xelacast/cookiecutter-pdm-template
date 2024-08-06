@@ -1,0 +1,54 @@
+[project]
+name = "pdm_demo"
+version = "0.1.0"
+description = "pdm demo for learning"
+authors = [
+    {name = "Alex Castillo", email = "63383168+xelacast@users.noreply.github.com"},
+]
+dependencies = [
+
+]
+
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "black",
+    "isort",
+    "flake8"
+]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest-xdist",
+]
+dev = [
+    "ruff>=0.5.6",
+]
+
+[tool.ruff]
+line-length = 110
+extend-include = ["*.ipynb"]
+include = ["pyproject.toml", "src/**/*.py", "scripts/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["E501", "D", "I", "F", "E", "W", "B", "C4", "UP", "FURB"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = false
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402", "D"]
+"**/{tests,docs,tools}/*" = ["E402"]
