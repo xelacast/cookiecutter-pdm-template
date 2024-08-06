@@ -3,9 +3,9 @@
 This is my base template for all Python projects moving forward. I'll update this repo where needed.
 
 # Specs
-Python 3.12
-Ruff
-PDM
+- Python 3.12
+- Ruff
+- PDM
 
 # Quickstart
 
