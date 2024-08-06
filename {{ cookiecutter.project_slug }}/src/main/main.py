@@ -1,7 +1,7 @@
 """Main functions to run the project.
 
 This Module provides:
-- main: Body of the script.
+- main: Body of the script. Mock Code.
 """
 
 from new_package.main import main as new_package_main
